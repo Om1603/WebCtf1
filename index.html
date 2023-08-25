@@ -37,8 +37,8 @@
     const random = document.getElementById('username').value;
     const test = document.getElementById('password').value;
 
-    const vusername = window.env.WUIHUOBOUO;
-    const vpassword = window.env.ISENFJEOSIJ;
+    const vusername = process.env.WUIHUOBOUO;
+    const vpassword = process.env.ISENFJEOSIJ;
 
     if (random === vusername && test === vpassword) {
         alert('test');
