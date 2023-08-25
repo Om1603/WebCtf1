@@ -34,13 +34,13 @@
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
-    const random = document.getElementById('username').value;
-    const test = document.getElementById('password').value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
     const vusername = process.env.WUIHUOBOUO;
     const vpassword = process.env.ISENFJEOSIJ;
 
-    if (random === vusername && test === vpassword) {
+    if (username === vusername && password === vpassword) {
         alert('test');
     } else {
         alert('Try again.');
