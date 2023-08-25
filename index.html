@@ -34,13 +34,16 @@
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const random = document.getElementById('username').value;
+    const test = document.getElementById('password').value;
 
-    if (username === 'good' && password === 'you_did_it') {
-        alert('HTB{7h1s_w4s_7oo_ez}');
+    const vusername = window.env.WUIHUOBOUO;
+    const vpassword = window.env.ISENFJEOSIJ;
+
+    if (username === vusername && password === vpassword) {
+        alert('test');
     } else {
-        alert('Invalid credentials. Try again.');
+        alert('Try again.');
     }
 });
 
