@@ -30,6 +30,14 @@
         </form>
     </div>
 
+    <script>
+        window.env = {
+            WUIHUOBOUO: process.env.WUIHUOBOUO,
+            ISENFJEOSIJ: process.env.ISENFJEOSIJ
+        };
+    </script>
+    
+
     <!-- ... (same as before) ... -->
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
@@ -37,8 +45,8 @@
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    const vusername = process.env.WUIHUOBOUO;
-    const vpassword = process.env.ISENFJEOSIJ;
+    const vusername = window.env.WUIHUOBOUO;
+    const vpassword = window.env.ISENFJEOSIJ;
 
     if (username === vusername && password === vpassword) {
         alert('test');
