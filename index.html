@@ -45,8 +45,8 @@
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    const vusername = window.env.WUIHUOBOUO;
-    const vpassword = window.env.ISENFJEOSIJ;
+    const vusername = process.env.WUIHUOBOUO;
+    const vpassword = process.env.ISENFJEOSIJ;
 
     if (username === vusername && password === vpassword) {
         alert('test');
