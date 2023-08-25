@@ -37,8 +37,11 @@
     const random = document.getElementById('username').value;
     const test = document.getElementById('password').value;
 
-    if (username === process.env.WUIHUOBOUO && password === process.env.ISENFJEOSIJ) {
-        alert(process.env.ROPR);
+    const vusername = process.env.WUIHUOBOUO;
+    const vpassword = process.env.ISENFJEOSIJ;
+
+    if (username === vusername && password === vpassword) {
+        alert('test');
     } else {
         alert('Try again.');
     }
